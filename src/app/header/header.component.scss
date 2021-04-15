@@ -1,0 +1,23 @@
+nav {
+  background-color: var(--primary);
+  color: #f1f1f1;
+  .logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.15rem;
+  }
+}
+
+ul {
+  li {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 10px 20px;
+    &:hover {
+      background-color: var(--secondary);
+    }
+    transition: background-color 350ms ease;
+    cursor: pointer;
+  }
+}

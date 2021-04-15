@@ -1,1 +1,174 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+:root {
+  --font-family: "Roboto", sans-serif;
+  --primary: #546de5;
+  --secondary: #778beb;
+  --accent: #e5546d;
+  --light-grey: #ddd;
+  --text-regular: #444;
+}
+html,
+body {
+  font-family: var(--font-family);
+  color: var(--text-regular);
+}
+//layout
+.container {
+  display: block;
+  margin: 1rem auto;
+  max-width: 1200px;
+}
+//utils
+
+.d-flex {
+  display: flex;
+}
+.fx-row {
+  flex-direction: row;
+}
+.fx-column {
+  flex-direction: column;
+}
+.j-c-center {
+  justify-content: center;
+}
+.j-c-between {
+  justify-content: space-between;
+}
+.fx-al-items-center {
+  align-items: space-center;
+}
+.fx-al-items-between {
+  align-items: space-between;
+}
+.fx-fill {
+  flex: 1 1 auto;
+}
+.fx-50 {
+  flex: 1 1 50%;
+}
+.p-10 {
+  padding: 10px;
+}
+.m-10 {
+  margin: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.m-20 {
+  margin: 20px;
+}
+.pl-10 {
+  padding: 10px;
+}
+.ml-10 {
+  margin: 10px;
+}
+.pl-20 {
+  padding: 20px;
+}
+.ml-20 {
+  margin: 20px;
+}
+
+.pr-10 {
+  padding: 10px;
+}
+.mr-10 {
+  margin: 10px;
+}
+.pr-20 {
+  padding: 20px;
+}
+.mr-20 {
+  margin: 20px;
+}
+
+.mt-10 {
+  margin: 10px;
+}
+.mb-10 {
+  margin: 10px;
+}
+.mt-20 {
+  margin: 20px;
+}
+.mb-20 {
+  margin: 20px;
+}
+.p-10 {
+  padding: 10px;
+}
+.m-10 {
+  margin: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.m-20 {
+  margin: 20px;
+}
+
+// debug
+
+.d1 {
+  border: 1px solid rgb(223, 38, 38);
+}
+.d2 {
+  border: 1px solid rgb(31, 202, 31);
+}
+//theme
+.list-primary {
+  li {
+    padding: 10px 15px;
+    border: 1px solid var(--light-grey);
+    border-radius: 3px;
+    border-top: 0;
+    box-shadow: 0 0px 5px rgba($color: #dfdddd, $alpha: 0.5);
+    cursor: pointer;
+    &:hover {
+      background-color: var(--primary);
+      color: var(--light-grey);
+      font-weight: 500;
+      transition: background-color 350ms ease;
+    }
+  }
+  li {
+    li:first-child {
+      border: 1px solid var(--light-grey);
+    }
+  }
+}
+.btn {
+  padding: 0.65rem 1.5rem;
+  border: 0;
+  outline: none;
+  color: var(--text-regular);
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: 500;
+  &:hover {
+    background-color: var(--secondary);
+  }
+  transition: all 350ms ease;
+}
